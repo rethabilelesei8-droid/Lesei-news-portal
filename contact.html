@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lesei's News Portal - Contact</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+
+    .contact-card {
+      background-color: var(--white);
+      border-radius: 9px;
+      padding: 26px;
+      text-align: center;
+      box-shadow: 0 2px 12px rgba(45,10,94,0.08);
+    }
+
+    .contact-card .icon { font-size: 2.2rem; margin-bottom: 10px; }
+    .contact-card h3 { font-size: 1rem; margin-bottom: 7px; }
+    .contact-card a, .contact-card p { font-size: 0.9rem; color: var(--muted); text-decoration: none; }
+    .contact-card a:hover { color: var(--accent); }
+
+    .form-group { margin-bottom: 16px; }
+
+    .form-group label {
+      display: block;
+      font-size: 0.86rem;
+      font-weight: 600;
+      color: var(--purple);
+      margin-bottom: 5px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 10px 13px;
+      border-radius: 7px;
+      font-size: 0.9rem;
+      font-family: 'IBM Plex Sans', sans-serif;
+      color: var(--text);
+      background-color: var(--soft);
+      border: 1.5px solid #d8d0f0;
+      outline: none;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--accent);
+      background-color: var(--white);
+    }
+
+    .form-group textarea { height: 120px; resize: vertical; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+
+    @media (max-width: 600px) { .form-row { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo">Lesei's <span>News Portal</span></a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="categories.html">Categories</a></li>
+          <li><a href="article.html">Article</a></li>
+          <li><a href="multimedia.html">Multimedia</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CATEGORY NAV BAR -->
+  <div class="cat-bar">
+    <div class="cat-bar-inner">
+      <a href="categories.html">Politics</a>
+      <a href="categories.html">Business</a>
+      <a href="categories.html">Health</a>
+      <a href="categories.html">Education</a>
+      <a href="categories.html">Sports</a>
+      <a href="categories.html">Community</a>
+    </div>
+  </div>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>Send us a news tip, correction, or general message</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+
+      <!-- CONTACT INFO CARDS -->
+      <div class="grid-3" style="margin-bottom:40px;">
+        <div class="contact-card">
+          <div class="icon">📞</div>
+          <h3>Call or WhatsApp</h3>
+          <a href="tel:+26663353532">+266 6335 3532</a>
+        </div>
+        <div class="contact-card">
+          <div class="icon">📧</div>
+          <h3>Email</h3>
+          <a href="mailto:rethabilelesei8@gmail.com">rethabilelesei8@gmail.com</a>
+        </div>
+        <div class="contact-card">
+          <div class="icon">📍</div>
+          <h3>Location</h3>
+          <p>Maseru, Lesotho</p>
+        </div>
+      </div>
+
+      <!-- FORM -->
+      <div style="display:grid; grid-template-columns:1.5fr 1fr; gap:30px;">
+
+        <div>
+          <h2 class="sec-title" style="margin-bottom:18px;">Send a Message</h2>
+          <div style="background:var(--white); border-radius:9px; padding:28px; box-shadow:0 2px 14px rgba(45,10,94,0.09);">
+            <form action="#" method="post">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="fname" placeholder="First name" />
+                </div>
+                <div class="form-group">
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lname" placeholder="Last name" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" />
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject">
+                  <option value="">-- Select --</option>
+                  <option>News Tip</option>
+                  <option>Correction Request</option>
+                  <option>General Enquiry</option>
+                  <option>Advertising</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Write your message..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-purple" style="width:100%;">Send Message</button>
+            </form>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="sec-title" style="margin-bottom:18px;">Quick Links</h2>
+
+          <div class="sidebar-widget">
+            <h3>Pages</h3>
+            <ul class="sidebar-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="categories.html">News Categories</a></li>
+              <li><a href="article.html">Read an Article</a></li>
+              <li><a href="multimedia.html">Multimedia</a></li>
+            </ul>
+          </div>
+
+          <div class="sidebar-widget">
+            <h3>External Sources</h3>
+            <ul class="sidebar-list">
+              <li><a href="https://www.bbc.com/news/world/africa" target="_blank">BBC Africa</a></li>
+              <li><a href="https://www.aljazeera.com" target="_blank">Al Jazeera</a></li>
+              <li><a href="https://www.reuters.com" target="_blank">Reuters</a></li>
+              <li><a href="https://www.un.org/en/news" target="_blank">UN News</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="categories.html">Categories</a>
+      <a href="article.html">Article</a>
+      <a href="multimedia.html">Multimedia</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-social">
+      <a href="#" title="Facebook">📘</a>
+      <a href="#" title="Twitter">🐦</a>
+      <a href="#" title="Instagram">📸</a>
+      <a href="#" title="WhatsApp">💬</a>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Lesei's News Portal. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

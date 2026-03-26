@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lesei's News Portal - News Categories</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+
+    /* HORIZONTAL NEWS CARD */
+    .h-card {
+      background-color: var(--white);
+      border-radius: 9px;
+      overflow: hidden;
+      box-shadow: 0 2px 12px rgba(45,10,94,0.08);
+      display: flex;
+      gap: 0;
+      margin-bottom: 14px;
+    }
+
+    .h-card img {
+      width: 130px;
+      height: 95px;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .h-card-body {
+      padding: 14px 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .h-card-body h3 { font-size: 0.95rem; margin-bottom: 5px; }
+    .h-card-body h3 a { color: var(--purple); text-decoration: none; }
+    .h-card-body h3 a:hover { color: var(--accent); }
+    .h-card-body p { font-size: 0.83rem; color: var(--muted); }
+
+    .cat-section { margin-bottom: 44px; }
+
+    .cat-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 14px;
+    }
+
+    .cat-header h2 { font-size: 1.2rem; }
+    .cat-header a  { font-size: 0.82rem; color: var(--accent); }
+
+    @media (max-width: 500px) {
+      .h-card { flex-direction: column; }
+      .h-card img { width: 100%; height: 150px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo">Lesei's <span>News Portal</span></a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="categories.html" class="active">Categories</a></li>
+          <li><a href="article.html">Article</a></li>
+          <li><a href="multimedia.html">Multimedia</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- NAVIGATION BAR WITH CATEGORIES -->
+  <div class="cat-bar">
+    <div class="cat-bar-inner">
+      <a href="#politics">Politics</a>
+      <a href="#business">Business</a>
+      <a href="#health">Health</a>
+      <a href="#education">Education</a>
+      <a href="#sports">Sports</a>
+      <a href="#community">Community</a>
+      <a href="#technology">Technology</a>
+    </div>
+  </div>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="container">
+      <h1>News Categories</h1>
+      <p>Browse Lesotho news by topic</p>
+    </div>
+  </div>
+
+  <!-- MAIN + SIDEBAR -->
+  <div class="container">
+    <div class="page-layout">
+
+      <main>
+
+        <!-- POLITICS -->
+        <div class="cat-section" id="politics">
+          <div class="cat-header">
+            <h2>🏛️ Politics</h2>
+            <a href="article.html">See all →</a>
+          </div>
+          <div class="h-card">
+            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=300&q=80" alt="Politics" />
+            <div class="h-card-body">
+              <span class="badge">Politics</span>
+              <h3><a href="article.html">Parliament Passes New Budget Amendments</a></h3>
+              <p>March 22, 2026 &nbsp;|&nbsp; Staff Reporter</p>
+            </div>
+          </div>
+          <div class="h-card">
+            <img src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=300&q=80" alt="Politics 2" />
+            <div class="h-card-body">
+              <span class="badge">Politics</span>
+              <h3><a href="article.html">Lesotho Hosts Southern Africa Regional Summit</a></h3>
+              <p>March 20, 2026 &nbsp;|&nbsp; Politics Desk</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- HEALTH -->
+        <div class="cat-section" id="health">
+          <div class="cat-header">
+            <h2>🏥 Health</h2>
+            <a href="article.html">See all →</a>
+          </div>
+          <div class="h-card">
+            <img src="images/h2.jpg" alt="Health" />
+            <div class="h-card-body">
+              <span class="badge">Health</span>
+              <h3><a href="article.html">New Clinic Opens in Leribe District</a></h3>
+              <p>March 22, 2026 &nbsp;|&nbsp; Health Desk</p>
+            </div>
+          </div>
+          <div class="h-card">
+            <img src="images/h2.jpg" alt="Health 2" />
+            <div class="h-card-body">
+              <span class="badge">Health</span>
+              <h3><a href="article.html">National Vaccination Drive Reaches Rural Areas</a></h3>
+              <p>March 18, 2026 &nbsp;|&nbsp; Health Desk</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- EDUCATION -->
+        <div class="cat-section" id="education">
+          <div class="cat-header">
+            <h2>🎓 Education</h2>
+            <a href="article.html">See all →</a>
+          </div>
+          <div class="h-card">
+            <img src="images/h3.jpg" alt="Education" />
+            <div class="h-card-body">
+              <span class="badge">Education</span>
+              <h3><a href="article.html">Schools to Receive New Learning Materials</a></h3>
+              <p>March 21, 2026 &nbsp;|&nbsp; Education Desk</p>
+            </div>
+          </div>
+          <div class="h-card">
+            <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=300&q=80" alt="Education 2" />
+            <div class="h-card-body">
+              <span class="badge">Education</span>
+              <h3><a href="article.html">Record Enrolment at Lesotho Universities in 2026</a></h3>
+              <p>March 19, 2026 &nbsp;|&nbsp; Education Desk</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- SPORTS -->
+        <div class="cat-section" id="sports">
+          <div class="cat-header">
+            <h2>⚽ Sports</h2>
+            <a href="article.html">See all →</a>
+          </div>
+          <div class="h-card">
+            <img src="images/h4.jpg" alt="Sports" />
+            <div class="h-card-body">
+              <span class="badge">Sports</span>
+              <h3><a href="article.html">Lesotho Wins Gold at Regional Athletics</a></h3>
+              <p>March 22, 2026 &nbsp;|&nbsp; Sports Desk</p>
+            </div>
+          </div>
+          <div class="h-card">
+            <img src="images/h4.jpg" alt="Sports 2" />
+            <div class="h-card-body">
+              <span class="badge">Sports</span>
+              <h3><a href="article.html">Football League Season Kicks Off This Weekend</a></h3>
+              <p>March 17, 2026 &nbsp;|&nbsp; Sports Desk</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- BUSINESS -->
+        <div class="cat-section" id="business">
+          <div class="cat-header">
+            <h2>💼 Business</h2>
+            <a href="article.html">See all →</a>
+          </div>
+          <div class="h-card">
+            <img src="images/h6.jpg" alt="Business" />
+            <div class="h-card-body">
+              <span class="badge">Business</span>
+              <h3><a href="article.html">Small Businesses Benefit from New Government Grants</a></h3>
+              <p>March 21, 2026 &nbsp;|&nbsp; Business Desk</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- COMMUNITY -->
+        <div class="cat-section" id="community">
+          <div class="cat-header">
+            <h2>🏘️ Community</h2>
+            <a href="article.html">See all →</a>
+          </div>
+          <div class="h-card">
+            <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=300&q=80" alt="Community" />
+            <div class="h-card-body">
+              <span class="badge">Community</span>
+              <h3><a href="article.html">Ha Mafafa Residents Launch Tree Planting Drive</a></h3>
+              <p>March 20, 2026 &nbsp;|&nbsp; Community Reporter</p>
+            </div>
+          </div>
+        </div>
+
+      </main>
+
+      <!-- SIDEBAR -->
+      <aside>
+
+        <div class="sidebar-widget">
+          <h3>Browse Categories</h3>
+          <ul class="sidebar-list">
+            <li><a href="#politics">🏛️ Politics</a></li>
+            <li><a href="#business">💼 Business</a></li>
+            <li><a href="#health">🏥 Health</a></li>
+            <li><a href="#education">🎓 Education</a></li>
+            <li><a href="#sports">⚽ Sports</a></li>
+            <li><a href="#community">🏘️ Community</a></li>
+            <li><a href="#technology">💻 Technology</a></li>
+          </ul>
+        </div>
+
+        <div class="sidebar-widget">
+          <h3>External Sources</h3>
+          <ul class="sidebar-list">
+            <li><a href="https://www.bbc.com/news/world/africa" target="_blank">BBC Africa</a></li>
+            <li><a href="https://www.aljazeera.com" target="_blank">Al Jazeera</a></li>
+            <li><a href="https://www.reuters.com" target="_blank">Reuters</a></li>
+            <li><a href="https://www.un.org/en/news" target="_blank">UN News</a></li>
+            <li><a href="https://www.voanews.com/africa" target="_blank">VOA Africa</a></li>
+          </ul>
+        </div>
+
+        <div class="sidebar-widget">
+          <h3>Most Read</h3>
+          <ul class="sidebar-list">
+            <li><a href="article.html">Economic Plan for 2026 Unveiled</a></li>
+            <li><a href="article.html">Flooding Alert for Southern Lesotho</a></li>
+            <li><a href="article.html">Athletics Gold for Lesotho</a></li>
+            <li><a href="article.html">New Health Programme Launches</a></li>
+            <li><a href="article.html">Record Enrolment at Universities</a></li>
+          </ul>
+        </div>
+
+      </aside>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="categories.html">Categories</a>
+      <a href="article.html">Article</a>
+      <a href="multimedia.html">Multimedia</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-social">
+      <a href="#" title="Facebook">📘</a>
+      <a href="#" title="Twitter">🐦</a>
+      <a href="#" title="Instagram">📸</a>
+      <a href="#" title="WhatsApp">💬</a>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Lesei's News Portal. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
